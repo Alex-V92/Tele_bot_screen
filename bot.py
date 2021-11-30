@@ -15,4 +15,5 @@ def repeat_all_messages(message): # Название функции не игр�
     pyautogui.screenshot( 'test' +'.png')
     bot.send_photo(message.chat.id,open('test.png','rb'))
 
-bot.polling(none_stop=True)
+if __name__ == '__main__':
+    bot.polling(none_stop=True)
